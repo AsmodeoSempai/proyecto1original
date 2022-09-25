@@ -1,0 +1,240 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #DCD7C9;
+    text-decoration: inherit;
+}
+.seccion_1{
+    position: relative;
+}
+.menu{
+    display: flex;
+    height: 75px;
+    width: 100%;
+    background-color: #112B3C;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+.caja_logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+}
+.nombre{
+    font-size: medium;
+    font-weight: 600;
+}
+.nombre :hover{
+    cursor: pointer;
+    color: white;
+}
+.lista_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista_menu_1{
+    display: flex;
+    align-items: center; 
+}
+#carrito{
+    width: 40px;
+}    
+li{
+    list-style: none;
+    margin: 0 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+li :hover{
+    color: white;
+    cursor: pointer;
+}
+.boton_sesion{
+    border-radius: 15px;
+    background-color: #3F4E4F;
+}
+#menu{
+    display: none;
+}
+.contenedor_jumbotron{
+    display: flex;
+    background-color: #205375;
+    width: 100%;
+    height: 44rem;
+    align-items: center;
+    justify-content: center;  
+}
+.fondo{
+    background-image: url("./img/main.jpg");
+    height: 39rem;
+    background-color: transparent;
+    width: 95%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));  
+}
+.tituloshop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    font-size: 31px;
+    letter-spacing: 1.8px;
+    word-spacing: 2.8px;
+    font-weight: bold;
+}
+
+.cajacorreo{
+    display: flex;
+    padding-left: 30px;
+}
+.barra{
+    
+    color: black;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+.boton_correo{
+    background-color: #3F4E4F;
+    border-radius:6px;
+    display:inline-block;
+    cursor:pointer;
+    color:#DCD7C9;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:15px 15px;;
+    text-decoration:none;  
+}
+.boton_correo:hover{
+    color: white;
+    cursor: pointer;
+}
+.separador2{
+    display: flex;
+    align-items: center;
+}
+.descri{
+    color: black;
+    font-weight: bolder;
+    padding-left: 40px;
+    font-size: large;
+}
+ .seccion_2{
+    width: 100%;
+    height: 50rem;
+    background-color: #F66B0E;
+    margin: 0 auto;
+}
+.sec{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    padding: 4rem;
+    grid-gap: 1rem;
+
+}
+.cajaventa{  
+    width: 300px;
+    height: 300px;
+    border: 1rem;
+    padding: 1rem;
+}
+.imgg{
+    width: 100%;
+    height: 100%;
+}
+.textoo{
+    width: 15rem;
+}
+.pie_pagina{
+    width: 100%;
+    background-color: #A27B5C;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    font-size: medium;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+.caja1footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;   
+}
+.ico{
+    margin: 0 15px;
+}
+.icono{
+    height: 3rem;
+    width: 3rem;
+    margin: 0;
+}
+.caja2footer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+@media screen and (max-width:700px) {
+    .lista_menu{
+        display: none;
+    }
+    #menu{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .caja2footer{
+        height: 50px;
+    }
+    .fondo{
+        width: 100%;
+    }
+    .sec{
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 100px 100px 100px;
+        grid-gap: 1rem;
+        justify-content: space-evenly;
+        padding: 4rem;
+        grid-gap: 1rem;
+    }  
+    .cajaventa{
+        width: 100px;
+        height: 100px;
+        border: 1rem;
+        padding: 1rem;
+    } 
+    .separador2{
+        display: none;
+    }
+    .tituloshop{
+        width: fit-content;
+        padding-left: 2rem;
+        
+    }
+    .texto{
+        padding-left: 2rem;
+    }
+
+}
+
+
